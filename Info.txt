@@ -1,0 +1,32 @@
+TS Type System:
+- used to catch errors
+- write type annotations
+- active during environment
+- doesn't provide performance optimization
+
+Typescript code -> TS Compiler -> JS code
+
+npm install -g typescript ts-node
+tsc --help
+
+vs code Setup:
+
+file > preferences > settings
+
+npm init -y
+npm install axios
+
+Helps with typo on object properties.
+Helps keep track of errors when passing arguments to functions.
+
+Syntax + Features
+Design Patterns with TS
+
+Type: easy way to refer to the different properties + functions that a value has.
+
+Primitive types:
+number, boolean, void, undefined
+string, symbol, null
+
+Object types:
+functions, arrays, classes, objects
