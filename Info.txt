@@ -30,3 +30,21 @@ string, symbol, null
 
 Object types:
 functions, arrays, classes, objects
+
+Type annotations and inference:
+variables, functions, objects.
+
+let <varName>: <type> = <value>;
+
+For object types:
+• arrays: <type>[]
+• classes: ClassName
+• object literal: {propName: typeOfProp}
+• functions: (param: paramType) => returnValue
+
+Variable declaration + initialization => TS will infer the type otherwise => type is any.
+Rely on type annotations:
+• when a function returns the any type
+ex: JSON.parse();
+• when we declare the variable on one line and initialize it later.
+• when the variable's type can not be inferred correctly, we want to express an or logic with our types.
