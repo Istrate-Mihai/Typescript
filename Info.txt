@@ -48,3 +48,13 @@ Rely on type annotations:
 ex: JSON.parse();
 • when we declare the variable on one line and initialize it later.
 • when the variable's type can not be inferred correctly, we want to express an or logic with our types.
+
+Type annotations for functions:
+Type inference is done only for returned values to functions based on a returned value inside the body of the function.
+Functions have the return type of void if they don't return nothing or never if they don't reach the end (example: have an error thrown).
+
+Bidimensional arrays:
+const arr: string[][]; -> array of string arrays.
+
+Multiple types array:
+const arr: (<type1> | <type2>) = ...;
