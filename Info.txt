@@ -1,4 +1,5 @@
 TS Type System:
+
 - used to catch errors
 - write type annotations
 - active during environment
@@ -43,6 +44,7 @@ For object types:
 • functions: (param: paramType) => returnValue
 
 Variable declaration + initialization => TS will infer the type otherwise => type is any.
+
 Rely on type annotations:
 • when a function returns the any type
 ex: JSON.parse();
@@ -57,4 +59,16 @@ Bidimensional arrays:
 const arr: string[][]; -> array of string arrays.
 
 Multiple types array:
-const arr: (<type1> | <type2>) = ...;
+const arr: (<type1> | <type2>)[] = ...;
+
+Tuple:
+const <varName>: [<type1>, <type2>, <type3>, <type4>] = ...;
+
+Interfaces:
+
+interface <Interface> {
+  <property>: <value>;
+  ...
+}
+
+Instance methods access modifiers: public, protected, private;
