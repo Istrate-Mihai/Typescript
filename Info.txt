@@ -72,3 +72,7 @@ interface <Interface> {
 }
 
 Instance methods access modifiers: public, protected, private;
+Class fields promoted properties:
+constructor(<accessModifier> fieldName: <dataType>) {}
+Derived classes must call constructor of parent via super if they have a
+constructor definition also.
